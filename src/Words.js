@@ -18,7 +18,7 @@ export const boardDefault = [
       const wordArr = result.split('\r\n')
       todaysWord = wordArr[Math.floor(Math.random() *  wordArr.length)]
       wordSet = new Set(wordArr)
-      console.log(todaysWord)
+      console.log(wordSet,todaysWord)
     })
     return {wordSet, todaysWord}
   }
