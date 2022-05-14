@@ -15,7 +15,7 @@ export const boardDefault = [
 
     await fetch(wordBank).then((res)=> res.text())
     .then((result)=>{
-      const wordArr = result.split('\r\n')
+      const wordArr = result.split(' ')
       todaysWord = wordArr[Math.floor(Math.random() *  wordArr.length)]
       wordSet = new Set(wordArr)
       console.log(wordSet,todaysWord)
