@@ -51,7 +51,7 @@ function App() {
     if (wordSet.has((currWord).toLowerCase())) {
          setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 })
     } else {
-      alert(currWord)
+      alert(currWord + 'is not a valid word')
     }
     if ((currWord)===correctWord.toUpperCase()){
       setGameOver({gameOver: true, guessedWord: true})
