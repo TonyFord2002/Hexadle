@@ -47,12 +47,12 @@ function App() {
     for (let i = 0; i < 6; i++) {
       currWord += board[currAttempt.attempt][i]
     }
-    if (wordSet.has(currWord.toLowerCase())) {
+    if (wordSet.has((currWord +'\r').toLowerCase())) {
          setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 })
     } else {
       alert("Not a valid word!")
     }
-    if (currWord===correctWord.toUpperCase()){
+    if ((currWord +'\r')===correctWord.toUpperCase()){
       setGameOver({gameOver: true, guessedWord: true})
       return
     }
