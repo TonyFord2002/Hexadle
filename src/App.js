@@ -48,10 +48,11 @@ function App() {
       currWord += board[currAttempt.attempt][i]
     }
     
-    if (wordSet.has((currWord).toLowerCase()) !== (currWord.toLowerCase())) {
+    if (wordSet.has((currWord).toLowerCase())) {
+      if(currWord.toLowerCase() !== correctWord){
+         setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 })
+    }} else {
       alert(currWord + ' is not a valid word')
-    } else {
-      setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 })
     }
     if ((currWord)===correctWord.toUpperCase()){
       setGameOver({gameOver: true, guessedWord: true})
