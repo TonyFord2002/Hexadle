@@ -48,13 +48,11 @@ function App() {
       currWord += board[currAttempt.attempt][i]
     }
     if (wordSet.has(currWord.toLowerCase())) {
-      console.log(currAttempt)
-      setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 })
-      console.log(currAttempt)
+         setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 })
     } else {
       alert("Not a valid word!")
     }
-    if (currWord===correctWord){
+    if (currWord===correctWord.toUpperCase()){
       setGameOver({gameOver: true, guessedWord: true})
       return
     }
@@ -64,7 +62,7 @@ function App() {
   }
   return (
     <div className="App">
-      <nav><h1>Wordle</h1></nav>
+      <nav><h1>Hexadle</h1></nav>
       <AppContext.Provider value={{
         board, 
         setBoard, 
