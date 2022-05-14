@@ -47,6 +47,7 @@ function App() {
     for (let i = 0; i < 6; i++) {
       currWord += board[currAttempt.attempt][i]
     }
+    console.log(currWord)
     if (wordSet.has((currWord).toLowerCase())) {
          setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 })
     } else {
