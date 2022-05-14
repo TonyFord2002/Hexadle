@@ -5246,6 +5246,7 @@ fresco
 fretty
 friars
 friary
+friday
 fridge
 friend
 friers
@@ -8740,6 +8741,7 @@ mommie
 momser
 momzer
 monads
+monday
 mondes
 mondos
 moneys

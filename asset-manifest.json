@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Hexadle/static/css/main.44ed349d.css",
-    "main.js": "/Hexadle/static/js/main.0816e023.js",
-    "static/media/Word-bank.txt": "/Hexadle/static/media/Word-bank.76736fc323d911c2c0b3.txt",
+    "main.js": "/Hexadle/static/js/main.b2b2dcb0.js",
+    "static/media/Word-bank.txt": "/Hexadle/static/media/Word-bank.31af87cf5aa48b3fe47a.txt",
     "index.html": "/Hexadle/index.html",
     "main.44ed349d.css.map": "/Hexadle/static/css/main.44ed349d.css.map",
-    "main.0816e023.js.map": "/Hexadle/static/js/main.0816e023.js.map"
+    "main.b2b2dcb0.js.map": "/Hexadle/static/js/main.b2b2dcb0.js.map"
   },
   "entrypoints": [
     "static/css/main.44ed349d.css",
-    "static/js/main.0816e023.js"
+    "static/js/main.b2b2dcb0.js"
   ]
 }
