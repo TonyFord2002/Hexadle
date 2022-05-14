@@ -52,6 +52,7 @@ function App() {
          setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 })
     } else {
       alert(currWord + ' is not a valid word')
+      return
     }
     if ((currWord)===correctWord.toUpperCase()){
       setGameOver({gameOver: true, guessedWord: true})
