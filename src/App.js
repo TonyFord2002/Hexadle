@@ -48,7 +48,7 @@ function App() {
       currWord += board[currAttempt.attempt][i]
     }
     
-    if (wordSet.has((currWord).toLowerCase()) !== currWord.toLowerCase()) {
+    if (wordSet.has((currWord).toLowerCase()) !== (currWord.toLowerCase())) {
       alert(currWord + ' is not a valid word')
     } else {
       setCurrAttempt({ attempt: currAttempt.attempt + 1, letterPos: 0 })
